@@ -1,0 +1,155 @@
+/* Estilos gerais (já existentes) */
+body {
+    background-color: #380700;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens da lista se movam para a linha seguinte em telas menores */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffff00;
+    font-style: italic;
+}
+
+.ent-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 300px 0 300px;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+.entidades {
+    text-align: center;
+    color: #ea7830;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nome_completo {
+    color: #ff0000;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.nome {
+    color: #ff0000;
+    font-size: 1.5em;
+    margin-top: 0.5em; 
+}
+
+.nome:hover {
+    color: #ffff00;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+}
+
+.pronomes {
+    color: #ff0000;
+}
+
+.medias {
+    text-align: center;
+}
+
+.rede {
+    color: #ea7830;
+}
+
+.link {
+    color: #ff0000;
+}
+
+.link:hover {
+    color: #ffff00;
+    font-style: italic;
+}
+
+.texto_inicial {
+    color: #ea7830;
+    text-align: center;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Altera a direção da lista para coluna em telas menores */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
+    }
+
+    .ent-container {
+        margin: 20px 10px; /* Reduz a margem em telas menores */
+        flex-direction: column; /* Altera a direção para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .nome_completo {
+        font-size: 2em; /* Reduz o tamanho da fonte */
+    }
+
+    .nome {
+        font-size: 1.2em; /* Reduz o tamanho da fonte */
+    }
+
+    p {
+        font-size: 1em; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    .nome_completo {
+        font-size: 1.5em; /* Tamanho ainda menor para telas muito pequenas */
+    }
+
+    .nome {
+        font-size: 1em; /* Tamanho ainda menor para telas muito pequenas */
+    }
+
+    p {
+        font-size: 0.9em; /* Tamanho ainda menor para telas muito pequenas */
+    }
+}
